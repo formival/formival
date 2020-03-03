@@ -77,7 +77,7 @@ embed a form anywhere:
 </form>
 ``` 
 
-See the Docs (TBC) and [Examples](https://github.com/formival/formival-examples) repo
+See the [Docs](https://formival.github.io) and [Examples](https://github.com/formival/formival-examples) repo
 for more details on usage.
 
 ### Browser
