@@ -1,11 +1,12 @@
 # Formival
 
-[![npm](https://img.shields.io/npm/v/formival)](https://www.npmjs.com/package/formival) 
+[![npm](https://badgen.net/npm/v/formival)](https://www.npmjs.com/package/formival) 
 [![size](https://badgen.net/bundlephobia/minzip/formival)](https://bundlephobia.com/result?p=formival)
-[![tests](https://api.travis-ci.org/formival/formival.svg?branch=master)](https://travis-ci.org/formival/formival)
-[![coverage](https://img.shields.io/codecov/c/gh/formival/formival)](https://codecov.io/gh/formival/formival)
-[![analysis](https://img.shields.io/scrutinizer/quality/g/formival/formival)](https://scrutinizer-ci.com/g/formival/formival/)
-[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+[![tests](https://badgen.net/travis/formival/formival)](https://travis-ci.org/formival/formival)
+[![coverage](https://badgen.net/codecov/c/gh/formival/formival)](https://codecov.io/gh/formival/formival)
+[![analysis](https://img.shields.io/scrutinizer/quality/g/formival/formival?style=flat-square)](https://scrutinizer-ci.com/g/formival/formival/)
+[![vue2](https://badgen.net/badge/Vue/2.x/green)](https://vuejs.org/)
+[![license](https://badgen.net/badge/license/MIT/blue)](http://opensource.org/licenses/MIT)
 
 Automatic form generation for Vue. 
 Inspired by Formly, but as idiomatic Vue. 
