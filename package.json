@@ -4,8 +4,8 @@
   "description": "Automatic form generation for Vue",
   "main": "dist/formival.js",
   "module": "dist/formival.esm.js",
-  "browser": "dist/formival.umd.min.js",
-  "unpkg": "dist/formival.umd.min.js",
+  "browser": "dist/formival.min.js",
+  "unpkg": "dist/formival.min.js",
   "files": [
     "dist",
     "src"

@@ -86,23 +86,7 @@ for more details on usage.
 <script src="formival/dist/formival.js"></script>
 
 <!-- From CDN -->
-<script src="https://unpkg.com/{{ name }}"></script>
-```
-
-## Development
-
-### Launch tests
-
-```bash
-npm run dev
-```
-
-### Build
-
-Bundle the js and css of to the `dist` folder:
-
-```bash
-npm run build
+<script src="https://unpkg.com/formival"></script>
 ```
 
 ## License
