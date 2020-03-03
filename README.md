@@ -30,6 +30,50 @@ new Vue({
 }).$mount('#app');
 ```
 
+As options when creating the `Formival` instance, you need to provide
+input types, wrappers, and validation messages:
+
+```js
+const types = [
+  {
+    name: 'input',
+    component: SimpleInput,
+    wrappers: ['field-wrapper']
+  }
+];
+
+const wrappers = [
+  {
+    name: 'field-wrapper',
+    component: FieldWrapper
+  }
+];
+
+const validationMessages = {
+  required: "{{field.templateOptions.label}} is required",
+  email: "{{value}} is not a valid email address"
+};
+
+const formival = new Formival({
+  types,
+  wrappers,
+  validationMessages
+});
+```
+
+Then you can make use of the `formival-form` component to
+embed a form anywhere:
+
+```html
+<form @submit.prevent="onSubmit" novalidate autocomplete="off">
+  <formival-form v-model="model" :validation="$v.model" :fields="fields"/>
+  <button type="submit">Submit</button>
+</form>
+``` 
+
+See the Docs (TBC) and [Examples](https://github.com/formival/formival-examples) repo
+for more details on usage.
+
 ### Browser
 
 ```html
