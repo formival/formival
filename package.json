@@ -1,0 +1,54 @@
+{
+  "name": "formival",
+  "version": "0.1.0",
+  "description": "Automatic form generation for Vue",
+  "main": "dist/formival.js",
+  "module": "dist/formival.esm.js",
+  "browser": "dist/formival.umd.min.js",
+  "unpkg": "dist/formival.umd.min.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "vue-cli-service test:unit",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "vue.js",
+    "forms",
+    "json forms",
+    "form library"
+  ],
+  "author": "Darren Mothersele <darren@darrenmothersele.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formival/formival.git"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@vue/cli-plugin-babel": "^4.2.3",
+    "@vue/cli-plugin-eslint": "^4.2.3",
+    "@vue/cli-plugin-unit-jest": "^4.2.3",
+    "@vue/cli-service": "^4.2.3",
+    "@vue/test-utils": "^1.0.0-beta.31",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.1",
+    "lodash.template": "^4.5.0",
+    "lodash.templatesettings": "^4.2.0",
+    "rollup": "^1.32.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-vue": "^5.1.6",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.0"
+  }
+}
