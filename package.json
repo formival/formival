@@ -1,6 +1,6 @@
 {
   "name": "formival",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Automatic form generation for Vue",
   "main": "dist/formival.js",
   "module": "dist/formival.esm.js",
