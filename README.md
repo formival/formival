@@ -1,6 +1,6 @@
 # Formival
 
-[![npm](https://img.shields.io/npm/v/formival.svg)](https://www.npmjs.com/package/formival) 
+[![npm](https://img.shields.io/npm/v/formival)](https://www.npmjs.com/package/formival) 
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
 Automatic form generation for Vue. 
