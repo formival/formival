@@ -1,5 +1,6 @@
 # Formival
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/00481f2073ed4f77a1653bd397201b49)](https://app.codacy.com/gh/formival/formival?utm_source=github.com&utm_medium=referral&utm_content=formival/formival&utm_campaign=Badge_Grade_Dashboard)
 [![npm](https://badgen.net/npm/v/formival)](https://www.npmjs.com/package/formival) 
 [![size](https://badgen.net/bundlephobia/minzip/formival)](https://bundlephobia.com/result?p=formival)
 [![tests](https://badgen.net/travis/formival/formival)](https://travis-ci.org/formival/formival)
