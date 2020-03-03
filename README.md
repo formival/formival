@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/formival)](https://www.npmjs.com/package/formival) 
 [![tests](https://api.travis-ci.org/formival/formival.svg?branch=master)](https://travis-ci.org/formival/formival)
+[![analysis](https://img.shields.io/scrutinizer/quality/g/formival/formival)](https://scrutinizer-ci.com/g/formival/formival/)
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
 Automatic form generation for Vue. 
