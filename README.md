@@ -1,11 +1,11 @@
 # Formival
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/00481f2073ed4f77a1653bd397201b49)](https://app.codacy.com/gh/formival/formival?utm_source=github.com&utm_medium=referral&utm_content=formival/formival&utm_campaign=Badge_Grade_Dashboard)
 [![npm](https://badgen.net/npm/v/formival)](https://www.npmjs.com/package/formival) 
 [![size](https://badgen.net/bundlephobia/minzip/formival)](https://bundlephobia.com/result?p=formival)
 [![tests](https://badgen.net/travis/formival/formival)](https://travis-ci.org/formival/formival)
 [![coverage](https://badgen.net/codecov/c/gh/formival/formival)](https://codecov.io/gh/formival/formival)
 [![analysis](https://img.shields.io/scrutinizer/quality/g/formival/formival?style=flat-square)](https://scrutinizer-ci.com/g/formival/formival/)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/00481f2073ed4f77a1653bd397201b49)](https://app.codacy.com/gh/formival/formival)
 [![vue2](https://badgen.net/badge/Vue/2.x/green)](https://vuejs.org/)
 [![license](https://badgen.net/badge/license/MIT/blue)](http://opensource.org/licenses/MIT)
 
