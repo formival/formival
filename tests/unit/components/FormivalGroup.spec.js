@@ -1,12 +1,21 @@
-import {shallowMount} from "@vue/test-utils";
+import {shallowMount, mount} from "@vue/test-utils";
 import FormivalGroup from "@/components/FormivalGroup";
+
+const WrappedGroup = {
+  components: { FormivalGroup },
+  template: `
+    <div>
+      <formival-group v-bind="$attrs" v-on="$listeners" />
+    </div>
+  `
+};
 
 describe('formival/components/FormivalGroup', () => {
 
   it('creates a formival-field for each field in fieldGroup', () => {
-    const wrapper = shallowMount(FormivalGroup, {
+    const wrapper = mount(WrappedGroup, {
       stubs: {
-        FormivalField: {
+        'formival-field': {
           template: '<div class="formival-field"></div>'
         }
       },
@@ -27,26 +36,33 @@ describe('formival/components/FormivalGroup', () => {
   });
 
   it('responds to input event from child field', () => {
-    const wrapper = shallowMount(FormivalGroup, {
+    let emittedValue = null;
+    shallowMount(FormivalGroup, {
       stubs: {
-        FormivalField: {
-          template: '<div></div>',
+        'formival-field': {
+          template: '<div class="formival-field">{{ field.key }}</div>',
+          props: ['field'],
           mounted() {
             this.$emit('input', 'value');
           }
         }
       },
-      propsData: {
-        field: {
-          fieldGroup: [
-            {
-              key: 'test'
-            }
-          ]
+      context: {
+        on: {
+          input: v => emittedValue = v
+        },
+        props: {
+          field: {
+            fieldGroup: [
+              {
+                key: 'test'
+              }
+            ]
+          }
         }
       }
     });
-    expect(wrapper.emitted().input[0]).toEqual([{ test: 'value' }]);
+    expect(emittedValue).toEqual({ test: 'value' });
   });
 
 });

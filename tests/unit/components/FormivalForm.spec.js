@@ -1,5 +1,5 @@
-import FormivalForm from "@/components/FormivalForm";
-import {shallowMount} from "@vue/test-utils";
+import FormivalForm from '@/components/FormivalForm';
+import { shallowMount } from '@vue/test-utils';
 
 describe('formival/components/FormivalForm', () => {
 
@@ -12,23 +12,33 @@ describe('formival/components/FormivalForm', () => {
     expect(wrapper.contains('formival-group-stub')).toBe(true);
   });
 
-  it('passes passes the value prop to the group', () => {
-    const value = {test: 'testing'};
+  it('passes the value prop to the group', () => {
+    const value = { test: 'testing' };
     const wrapper = shallowMount(FormivalForm, {
       stubs: {
-        'formival-group': true
+        'formival-group': {
+          props: ['value'],
+          template: '<div class="formival-group-stub"></div>'
+        }
       },
-      propsData: {value}
+      context: {
+        props: { value }
+      }
     });
-    expect(wrapper.find('formival-group-stub').vm.value).toBe(value);
+    expect(wrapper.find('.formival-group-stub').vm.value).toBe(value);
   });
 
   it('responds to the input event from the group', () => {
     const wrapper = shallowMount(FormivalForm, {
+      context: {
+        on: {
+          input: v => console.log(v)
+        }
+      },
       stubs: {
-        FormivalGroup: {
+        'formival-group': {
           template: '<div></div>',
-          mounted() {
+          mounted () {
             this.$emit('input', 'test');
           }
         }

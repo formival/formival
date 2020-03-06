@@ -1,31 +1,19 @@
 export default {
   name: "FormivalForm",
-  props: {
-    value: {
-      type: Object,
-      default: () => ({})
-    },
-    fields: {
-      type: Array,
-      default: () => []
-    },
-    validation: {
-      type: Object
-    }
-  },
-  render(createElement) {
+  functional: true,
+  render(createElement, { props, listeners }) {
     return createElement('formival-group', {
       on: {
         input: v => {
-          this.$emit('input', v);
+          listeners.input(v);
         }
       },
       props: {
-        value: this.value,
+        value: props.value,
         field: {
-          fieldGroup: this.fields
+          fieldGroup: props.fields
         },
-        validation: this.validation
+        validation: props.validation
       }
     });
   }

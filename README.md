@@ -88,7 +88,7 @@ for more details on usage.
 <script src="formival/dist/formival.js"></script>
 
 <!-- From CDN -->
-<script src="https://unpkg.com/formival@0.1.3"></script>
+<script src="https://unpkg.com/formival"></script>
 ```
 
 ## License
