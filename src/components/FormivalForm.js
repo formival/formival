@@ -11,7 +11,7 @@ export default {
       props: {
         value: props.value,
         field: {
-          fieldGroup: props.fields
+          fieldGroup: props.fields || []
         },
         validation: props.validation
       }
