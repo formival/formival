@@ -13,7 +13,6 @@ export default {
         },
         on: {
           input: v => {
-            console.log('v', v);
             listeners.input(field.key ? {...props.value, [field.key]: v} : {...props.value, ...v});
           }
         }
